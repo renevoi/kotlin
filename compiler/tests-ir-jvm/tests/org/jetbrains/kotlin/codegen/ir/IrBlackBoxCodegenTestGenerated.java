@@ -6857,6 +6857,12 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
             doTest(fileName);
         }
 
+        @TestMetadata("varByMapExtension.kt")
+        public void testVarByMapExtension() throws Exception {
+            String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/delegatedProperty/varByMapExtension.kt");
+            doTest(fileName);
+        }
+
         @TestMetadata("varInInnerClass.kt")
         public void testVarInInnerClass() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/delegatedProperty/varInInnerClass.kt");
